@@ -1,0 +1,299 @@
+@font-face {
+	font-family: 'SF Pro Rounded';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/SF Pro Rounded/SF-Pro-Rounded-Regular.otf') format('otf');
+}
+
+* { 
+    font-family:'SF Pro Rounded';
+}
+
+body{
+    background-image: url('../images/background.svg');
+    background-color: #131313;
+}
+
+p, li{
+    color: #FFF;
+    font-family: ''SF Pro Rounded'';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+h2{
+    color: #FFF;
+    font-family: 'SF Pro Rounded';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+}
+a{
+    color: #70DA7B;
+}
+.contact_h1{
+    color: #FFF;
+    text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.30);
+    font-family: 'SF Pro Rounded';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 120% */
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    margin: 32px 0;
+}
+.header_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo span{
+    color: #fff;
+    margin-left: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    margin-left: 40px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #FFF;
+    text-align: right;
+    font-family: 'SF Pro Rounded';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 200% */
+    text-decoration: none;
+}
+nav ul li a.active,
+.mobile_menu ul li a.active{
+    color: #70DA7B;
+}
+.mobile_menu ul li a.active{
+    text-decoration: underline;
+}
+
+.mobile_menu_burger{
+    display: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #70DA7B;
+}
+.main_section{
+    display: flex;
+    margin-top: 96px;
+}
+.color1{
+    color: #70DA7B;
+}
+h1{
+    color: #FFF;
+    font-family: 'SF Pro Rounded';
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+}
+.main_block_text{
+    margin-right: 79px;
+    width: 50%;
+}
+.main_block_text p{
+    color: rgba(255, 255, 255, 0.50);
+    text-shadow: 0px 4px 18px rgba(0, 0, 0, 0.30);
+    font-family: 'SF Pro Rounded';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 133.333% */
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.main_block_image{
+    width: 50%;
+}
+.main_block_image img{
+    width: 100%;
+}
+
+.contacts_form form{
+    display: flex;
+    flex-direction: column;
+}
+.contacts_form form .email,
+.contacts_form form .message{
+    border-radius: 12px;
+    background: #FFF;
+    margin-bottom: 8px;
+    padding: 8px 24px;
+    border: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 300% */
+}
+
+.contacts_form form .email::placeholder,
+.contacts_form form .message::placeholder{
+    color: rgba(0, 0, 0, 0.25);
+    font-family: 'SF Pro Rounded';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 300% */
+}
+.contacts_form form .message{
+    margin-bottom: 16px;
+}
+
+.contacts_form form .btn{
+    border-radius: 12px;
+    background: #70DA7B;
+    color: #000;
+    font-family: 'SF Pro Rounded';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 200% */
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+}
+
+.mobile_menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.mobile_menu .header_wrapper{
+    margin: 13px 16px;
+}
+.mobile_menu ul li{
+    list-style: none;
+    margin-bottom: 16px;
+    padding: 8px 20px;
+}
+.mobile_menu ul li a{
+    color: #FFF;
+    font-family: 'SF Pro Rounded';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    text-decoration: none;
+    
+}
+.close_mobile_menu img{
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width:960px) {
+    header{
+        margin: 21px 0;
+    }
+    .container{
+        max-width: 736px;
+    }
+    .contact_h1{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    nav ul li{
+        margin-left: 24px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        line-height: 36px;
+    }
+
+    .main_block_text{
+        margin: 0;
+    }
+
+    .main_section{
+        margin-top: 48px;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .main_block_text p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:768px) {
+    .mobile_menu_burger{
+        display: flex;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        margin: 12px 0;
+    }
+    .container{
+        max-width: 368px;
+    }
+    .main_section{
+        flex-direction: column;
+        margin-top: 16px;
+    }
+    .main_block_text,
+    .main_block_image{
+        width: 100%;
+    }
+
+    .main_block_text{
+        margin-bottom: 32px;
+    }
+
+    .link_to_appstore{
+        text-align: center;
+    }
+
+    .contact_us_page{
+        display: none;
+    }
+}
+
