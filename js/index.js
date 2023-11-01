@@ -6,4 +6,8 @@ $(function() {
     $('.close_mobile_menu').on('click', function(){
         $('.mobile_menu').hide('slow');
     });
+
+
+    
+
 });
